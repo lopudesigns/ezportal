@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import steem from '@steemit/steem-js';
+import ezira from 'ezj';
 import rootSaga from './sagas';
 import app from './reducers/app';
 import user from './reducers/user';
@@ -12,8 +12,8 @@ const reducers = combineReducers({
     tracking,
 });
 
-if (window.config.STEEMJS_URL) {
-    steem.api.setOptions({ url: window.config.STEEMJS_URL });
+if (window.config.EZIRAJS_URL) {
+    ezira.api.setOptions({ url: window.config.EZIRAJS_URL });
 }
 
 const sagaMiddleware = createSagaMiddleware();

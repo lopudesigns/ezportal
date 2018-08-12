@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
-import steem from '@steemit/steem-js';
+import ezira from 'ezj';
 import { Button, Form, Icon, Popover } from 'antd';
 import { CHECKPOINTS } from '../../constants';
 import LanguageItem from './LanguageItem';
@@ -154,7 +154,7 @@ class CreateAccount extends Component {
         } = this.props;
         const { username, password, email } = this.state;
 
-        const publicKeys = steem.auth.generateKeys(username, password, [
+        const publicKeys = ezira.auth.generateKeys(username, password, [
             'owner',
             'active',
             'posting',
@@ -363,7 +363,7 @@ class CreateAccount extends Component {
                                     <FormattedMessage id="welcome" /> {username}
                                 </h1>
                                 <p>
-                                    <FormattedMessage id="enjoy_steem" />
+                                    <FormattedMessage id="enjoy_ezira" />
                                 </p>
                                 {!this.isWhistle() && (
                                     <Form.Item>

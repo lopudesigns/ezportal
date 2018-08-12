@@ -84,7 +84,7 @@ const SignupOptions = ({
             >
                 <a
                     className="external-link"
-                    href="https://blocktrades.us/create-steem-account"
+                    href="https://blocktrades.us/create-ezira-account"
                     onClick={() => {
                         logCheckpoint(
                             CHECKPOINTS.paid_signup_clicked_blocktrades
@@ -102,37 +102,37 @@ const SignupOptions = ({
 
                 <a
                     className="external-link"
-                    href="https://anon.steem.network/"
+                    href="https://anon.ezira.io/"
                     onClick={() => {
                         logCheckpoint(
-                            CHECKPOINTS.paid_signup_clicked_anonsteem
+                            CHECKPOINTS.paid_signup_clicked_anon
                         );
                     }}
                 >
                     <Button type="primary" ghost htmlType="button">
-                        AnonSteem
+                        Anon
                         <Icon type="link" />
                     </Button>
                 </a>
                 <p>
-                    <FormattedMessage id="signup_options_anonsteem" />
+                    <FormattedMessage id="signup_options_anon" />
                 </p>
                 <a
                     className="external-link"
-                    href="https://steemit.com/news/@timcliff/new-tool-from-busy-org-create-new-steem-blockchain-accounts-with-steemconnect"
+                    href="https://alpha.ezira.io/news/@timcliff/new-tool-from-busy-org-create-new-ezira-blockchain-accounts-with-ezauth"
                     onClick={() => {
                         logCheckpoint(
-                            CHECKPOINTS.paid_signup_clicked_steemconnect
+                            CHECKPOINTS.paid_signup_clicked_ezauth
                         );
                     }}
                 >
                     <Button type="primary" ghost htmlType="button">
-                        SteemConnect
+                        Ezira
                         <Icon type="link" />
                     </Button>
                 </a>
                 <p>
-                    <FormattedMessage id="signup_options_steemconnect" />
+                    <FormattedMessage id="signup_options_ezauth" />
                 </p>
                 <hr />
                 <p className="modal-disclaimer">
@@ -153,7 +153,7 @@ SignupOptions.propTypes = {
 };
 
 SignupOptions.defaultProps = {
-    referrer: 'steemit',
+    referrer: 'test.ezira.auth',
 };
 
 export default SignupOptions;

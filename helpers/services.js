@@ -6,7 +6,7 @@
  */
 
 const fetch = require('isomorphic-fetch');
-const steem = require('@steemit/steem-js');
+const ezira = require('ezj');
 const geoip = require('../helpers/maxmind');
 const jwt = require('jsonwebtoken');
 const { checkpoints } = require('../constants');
@@ -41,9 +41,9 @@ const createAccountFee = getEnv('CREATE_ACCOUNT_FEE');
 const createAccountWif = getEnv('DELEGATOR_ACTIVE_WIF');
 const recaptchaSecret = getEnv('RECAPTCHA_SECRET');
 
-const rpcNode = getEnv('STEEMJS_URL');
+const rpcNode = getEnv('EZIRAJS_URL');
 if (rpcNode) {
-    steem.api.setOptions({ url: rpcNode });
+    ezira.api.setOptions({ url: rpcNode });
 }
 
 /**
@@ -118,7 +118,7 @@ async function conveyorCall(method, params) {
         logger.warn({ callParams: params }, 'Conveyor call %s', method);
         switch (method) {
             case 'is_email_registered':
-                return (params.email || params[0]) === 'taken@steemit.com';
+                return (params.email || params[0]) === 'taken@ezira.io';
             case 'is_phone_registered':
                 return (params.phone || params[0]) === '+12345678900';
             case 'set_user_data':
@@ -127,7 +127,7 @@ async function conveyorCall(method, params) {
                 throw new Error(`No mock implementation for ${method}`);
         }
     } else {
-        return steem.api.signedCallAsync(
+        return ezira.api.signedCallAsync(
             `conveyor.${method}`,
             params,
             conveyorAccount,
@@ -155,14 +155,14 @@ async function verifyCaptcha(recaptcha, ip) {
 }
 
 /**
- * Create new steem account.
+ * Create new ezira account.
  * @param payload Account create with delegation operation.
  */
 async function createAccount(payload) {
     if (DEBUG_MODE) {
         logger.warn({ accountPayload: payload }, 'Creating new account');
     } else {
-        return steem.broadcast.accountCreateWithDelegationAsync(
+        return ezira.broadcast.accountCreateWithDelegationAsync(
             createAccountWif,
             createAccountFee,
             createAccountDelegation,
@@ -188,7 +188,7 @@ async function checkUsername(username) {
         return username === 'taken';
     }
     // TODO: this could use lookup_accounts which is less heavy on our rpc nodes
-    const [account] = await steem.api.getAccountsAsync([username]);
+    const [account] = await ezira.api.getAccountsAsync([username]);
     return !!account;
 }
 
@@ -212,7 +212,7 @@ async function classifySignup(user) {
     if (device && device.renderer && device.vendor) {
         metadata.browser_gpu = `${device.vendor} ${device.renderer}`;
     }
-    return steem.api.signedCallAsync(
+    return ezira.api.signedCallAsync(
         'gatekeeper.check',
         { metadata },
         conveyorAccount,

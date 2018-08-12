@@ -297,9 +297,9 @@ class SignupDetail extends React.Component<
               <small>
                 <a
                   target="_blank"
-                  href={`https://steemd.com/@${signup.username}`}
+                  href={`https://ezira.io/@${signup.username}`}
                 >
-                  lookup on steemd.com
+                  go to your profile
                 </a>
               </small>
             ) : null}

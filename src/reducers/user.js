@@ -22,7 +22,7 @@ const defaultState = Map({
     countryCode: null,
     phoneNumberFormatted: '',
     prefix: '',
-    referrer: 'steemit',
+    referrer: 'test.ezira.auth',
     token: '',
     completed: false,
     step: 'signupOptions',

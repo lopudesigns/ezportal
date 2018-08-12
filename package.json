@@ -1,5 +1,5 @@
 {
-  "name": "faucet",
+  "name": "ezsignup",
   "version": "0.0.1",
   "engines": {
     "node": ">=8.1.4"
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "6.2.1",
-    "@steemit/steem-js": "0.7.1",
+    "ezj": "0.7.1",
     "body-parser": "1.18.2",
     "bunyan": "1.8.12",
     "express": "4.16.2",

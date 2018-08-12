@@ -1,4 +1,4 @@
-const { hash } = require('@steemit/steem-js/lib/auth/ecc');
+const { hash } = require('ezj/lib/auth/ecc');
 const crypto = require('crypto');
 const validator = require('validator');
 const jwt = require('jsonwebtoken');
@@ -381,7 +381,7 @@ async function handleRequestSms(req) {
     try {
         await services.sendSMS(
             phoneNumber,
-            `${phoneCode} is your Steem confirmation code`
+            `${phoneCode} is your Ezira confirmation code`
         );
     } catch (cause) {
         if (cause.code === 21614 || cause.code === 21211) {
@@ -546,7 +546,7 @@ async function handleConfirmAccount(token) {
 }
 
 /**
- * Create the account on the blockchain using steem-js
+ * Create the account on the blockchain using ezj
  * Send the data to the conveyor that will store the user account
  * Remove the user information from our database
  */
@@ -643,7 +643,7 @@ async function handleCreateAccount(req) {
             },
             { where: { email: decoded.email } }
         );
-        // steem-js error messages are so long that the log is clipped causing
+        // ezj error messages are so long that the log is clipped causing
         // errors in scalyr parsing
         cause.message = cause.message.split('\n').slice(0, 2);
         throw new ApiError({

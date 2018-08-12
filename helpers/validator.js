@@ -1,9 +1,9 @@
-const steem = require('@steemit/steem-js');
+const ezira = require('ezj');
 const validator = require('validator');
 const badDomains = require('../bad-domains');
 
 const accountNotExist = (rule, value, callback) => {
-    steem.api.getAccounts([value], (err, result) => {
+    ezira.api.getAccounts([value], (err, result) => {
         if (result[0]) {
             callback(['Account name is not available']);
         } else {
@@ -35,7 +35,7 @@ const INVALID_ACCOUNTNAME_REASONS = {
 /**
  * If the name is invalid, throws an error with a message set to one of INVALID_ACCOUNTNAME_REASONS.
  * See
- * https://github.com/steemit/condenser/blob/eaf8a02658b8deaef376ec90b81d0866e52582cc/app/utils/ChainValidation.js#L4
+ * https://github.com/eziranetwork/ezapp/blob/eaf8a02658b8deaef376ec90b81d0866e52582cc/app/utils/ChainValidation.js#L4
  *
  * @param {string} name
  * @return {boolean}

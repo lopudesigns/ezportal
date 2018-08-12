@@ -269,9 +269,9 @@ class Signup extends Component {
 
                         {step === 'signupOptions' && (
                             <div>
-                                {referrer === 'steemit' && (
+                                {referrer === 'ezira' && (
                                     <object
-                                        data="img/steemit-logo.svg"
+                                        data="img/ezira-logo.svg"
                                         type="image/svg+xml"
                                         id="app-logo"
                                         aria-label="logo"
@@ -289,9 +289,9 @@ class Signup extends Component {
                         )}
                         {step === 'username' && (
                             <div className="form-content">
-                                {referrer === 'steemit' && (
+                                {referrer === 'ezira' && (
                                     <object
-                                        data="img/steemit-logo.svg"
+                                        data="img/ezira-logo.svg"
                                         type="image/svg+xml"
                                         id="app-logo"
                                         aria-label="logo"
@@ -301,10 +301,10 @@ class Signup extends Component {
                                     <FormattedMessage id="get_started" />
                                 </h1>
                                 <p>
-                                    {referrer === 'steemit' && (
-                                        <FormattedMessage id="username_know_steemit" />
+                                    {referrer === 'ezira' && (
+                                        <FormattedMessage id="username_know_ezira" />
                                     )}
-                                    {referrer !== 'steemit' && (
+                                    {referrer !== 'ezira' && (
                                         <FormattedMessage id="username_know" />
                                     )}
                                 </p>

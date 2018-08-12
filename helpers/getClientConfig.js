@@ -7,7 +7,7 @@
 function getClientConfig() {
     const envVars = [
         'RECAPTCHA_SITE_KEY',
-        'STEEMJS_URL',
+        'EZIRAJS_URL',
         'DEFAULT_REDIRECT_URI',
     ];
 

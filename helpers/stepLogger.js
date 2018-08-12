@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const { api } = require('@steemit/steem-js');
+const { api } = require('ezj');
 
 const generateTrackingId = () =>
     `x-${Math.random()
