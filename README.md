@@ -56,8 +56,8 @@ You can build and start the Docker image like this:
 
 ```
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-docker build -t="$USER/faucet:$BRANCH" .
-docker run -it -p 3000:3000 --env-file=.env "$USER/faucet:$BRANCH"
+docker build -t eziranetwork/ezportal" .
+docker run -it -p 5678:3000 --env-file=.env "eziranetwork/ezportal"
 ```
 
 ## Debugging

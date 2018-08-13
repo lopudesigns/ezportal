@@ -12,10 +12,10 @@ Development
 env $(tr "\\n" " " < .env) yarn start-dev
 ```
 
-2. From the `admin` dir, to run **Faucet Admin**  first set the env var `REACT_APP_SERVER_ADDRESS` to point to your local faucet instance (usually `http://localhost:3001/admin`) and then run `yarn start`. This is a live-reloading development server.
+2. From the `admin` dir, to run **Faucet Admin**  first set the env var `REACT_APP_SERVER_ADDRESS` to point to your local faucet instance (usually `http://localhost:5555/admin`) and then run `yarn start`. This is a live-reloading development server.
 
 ```
-REACT_APP_SERVER_ADDRESS="http://localhost:3001/admin" yarn start
+REACT_APP_SERVER_ADDRESS="http://localhost:5555/admin" yarn start
 ```
 
 *Make sure to run `yarn lint` before committing new changes.*
