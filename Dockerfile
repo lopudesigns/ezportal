@@ -52,8 +52,8 @@ COPY --from=build-stage /app/src src
 COPY --from=build-stage /app/views views
 COPY --from=admin-stage /app/admin/build public/admin
 
-# run on port 3001
+# run on port 5678
 ENV NODE_ENV production
-ENV PORT 3001
+ENV PORT 5678
 
-CMD [ "node", "bin/www" ]
+CMD [ "node", "bin/ezsignup" ]

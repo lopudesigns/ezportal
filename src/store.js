@@ -12,8 +12,8 @@ const reducers = combineReducers({
     tracking,
 });
 
-if (window.config.EZIRAJS_URL) {
-    ezira.api.setOptions({ url: window.config.EZIRAJS_URL });
+if (window.config.EZAPI_URL) {
+    ezira.api.setOptions({ url: window.config.EZAPI_URL });
 }
 
 const sagaMiddleware = createSagaMiddleware();

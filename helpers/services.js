@@ -41,7 +41,7 @@ const createAccountFee = getEnv('CREATE_ACCOUNT_FEE');
 const createAccountWif = getEnv('DELEGATOR_ACTIVE_WIF');
 const recaptchaSecret = getEnv('RECAPTCHA_SECRET');
 
-const rpcNode = getEnv('EZIRAJS_URL');
+const rpcNode = getEnv('EZAPI_URL');
 if (rpcNode) {
     ezira.api.setOptions({ url: rpcNode });
 }

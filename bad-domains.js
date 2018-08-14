@@ -2623,7 +2623,7 @@ wuzupmail.net
 www.bccto.me
 www.gishpuppy.com
 www.mailinator.com
-wwwnew.eu
+www.new.eu
 wyvernia.net
 x24.com
 x4y.club

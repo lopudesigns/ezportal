@@ -7,7 +7,7 @@
 function getClientConfig() {
     const envVars = [
         'RECAPTCHA_SITE_KEY',
-        'EZIRAJS_URL',
+        'EZAPI_URL',
         'DEFAULT_REDIRECT_URI',
     ];
 

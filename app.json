@@ -57,7 +57,7 @@
     "CREATE_USER_URL": {
       "required": true
     },
-    "EZIRAJS_URL": {
+    "EZAPI_URL": {
       "required": true
     },
     "LOG_FORMAT": "short",

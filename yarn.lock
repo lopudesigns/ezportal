@@ -477,7 +477,7 @@ autoprefixer@^6.0.2, autoprefixer@^6.3.1:
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.7.tgz#1dbd1c835658e35ce3f9984099db00585c782014"
   dependencies:
     browserslist "^1.7.6"
-    caniuse-db "^1.0.30000634"
+    caniuse-db "^1.0.56780634"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^5.2.16"
@@ -1540,14 +1540,14 @@ browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
   version "1.7.7"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.7.7.tgz#0bd76704258be829b2398bb50e4b62d1a166b0b9"
   dependencies:
-    caniuse-db "^1.0.30000639"
+    caniuse-db "^1.0.56780639"
     electron-to-chromium "^1.2.7"
 
 browserslist@^2.1.2:
   version "2.11.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.11.3.tgz#fe36167aed1bbcde4827ebfe71347a2cc70b99b2"
   dependencies:
-    caniuse-lite "^1.0.30000792"
+    caniuse-lite "^1.0.56780792"
     electron-to-chromium "^1.3.30"
 
 bs58@^4.0.0:
@@ -1661,17 +1661,17 @@ caniuse-api@^1.5.2:
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-1.6.1.tgz#b534e7c734c4f81ec5fbe8aca2ad24354b962c6c"
   dependencies:
     browserslist "^1.3.6"
-    caniuse-db "^1.0.30000529"
+    caniuse-db "^1.0.56780529"
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000827"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000827.tgz#bd2839dd196093b44c28c17f93513140c9d92588"
+caniuse-db@^1.0.56780529, caniuse-db@^1.0.56780634, caniuse-db@^1.0.56780639:
+  version "1.0.56780827"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.56780827.tgz#bd2839dd196093b44c28c17f93513140c9d92588"
 
-caniuse-lite@^1.0.30000792:
-  version "1.0.30000827"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000827.tgz#2dad2354e4810c3c9bb1cfc57f655c270c25fa52"
+caniuse-lite@^1.0.56780792:
+  version "1.0.56780827"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.56780827.tgz#2dad2354e4810c3c9bb1cfc57f655c270c25fa52"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
