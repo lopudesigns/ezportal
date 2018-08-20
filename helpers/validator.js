@@ -1,9 +1,9 @@
-const ezira = require('ezj');
+const ezhelp.js = require('ezhelp.js');
 const validator = require('validator');
 const badDomains = require('../bad-domains');
 
 const accountNotExist = (rule, value, callback) => {
-    ezira.api.getAccounts([value], (err, result) => {
+    ezhelp.js.api.getAccounts([value], (err, result) => {
         if (result[0]) {
             callback(['Account name is not available']);
         } else {

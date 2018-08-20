@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import ezira from 'ezj';
+import ezira from 'ezhelp.js';
 import rootSaga from './sagas';
 import app from './reducers/app';
 import user from './reducers/user';
@@ -13,7 +13,7 @@ const reducers = combineReducers({
 });
 
 if (window.config.EZAPI_URL) {
-    ezira.api.setOptions({ url: window.config.EZAPI_URL });
+    ezhelp.js.api.setOptions({ url: window.config.EZAPI_URL });
 }
 
 const sagaMiddleware = createSagaMiddleware();

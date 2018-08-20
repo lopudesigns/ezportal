@@ -37,16 +37,6 @@
     "@sendgrid/client" "^6.2.1"
     "@sendgrid/helpers" "^6.2.1"
 
-"@steemit/libcrypto@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@steemit/libcrypto/-/libcrypto-1.0.1.tgz#c31ab3e5deb667628169b3d54d746b015de31a79"
-
-"@steemit/rpc-auth@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@steemit/rpc-auth/-/rpc-auth-1.1.1.tgz#8f6239e89783d2b251b49e9e1b9486b5d167f944"
-  dependencies:
-    "@steemit/libcrypto" "^1.0.1"
-
 "@types/caseless@*":
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/@types/caseless/-/caseless-0.12.1.tgz#9794c69c8385d0192acc471a540d1f8e0d16218a"
@@ -3299,7 +3289,7 @@ ezj@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ezj/-/ezj-0.7.1.tgz#967a05ec1ea31304bf7fdfd5e63e722d56f9226d"
   dependencies:
-    "@steemit/rpc-auth" "^1.1.0"
+    "rpc-auth" "^1.1.0"
     bigi "^1.4.2"
     bluebird "^3.4.6"
     browserify-aes "^1.0.6"

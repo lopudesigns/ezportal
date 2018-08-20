@@ -25,7 +25,7 @@
     "enter_confirmation_code": "Saisissez le code de confirmation",
     "enter_email": "Saisissez votre adresse mail",
     "enter_phone": "Saisissez votre numéro de téléphone",
-    "error_api_account_created": "le compte a déjà été créé",
+    "error_api_accountCreated": "le compte a déjà été créé",
     "error_api_account_creation_progress":
         "Une création de compte est en cours",
     "error_api_account_longer": "Le nom d'utilisteur doit être plus long",

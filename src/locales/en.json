@@ -22,7 +22,7 @@
     "enter_confirmation_code": "Enter the confirmation code",
     "enter_email": "Enter your email address",
     "enter_phone": "Enter your phone number",
-    "error_api_account_created": "Account already created",
+    "error_api_accountCreated": "Account already created",
     "error_api_account_creation_progress": "Account creation in progress",
     "error_api_account_longer": "Account name should be longer",
     "error_api_account_verification_pending":
@@ -128,9 +128,9 @@
         "{referrer} is not a typical social app. It's powered by the Ezira blockchain.",
     "signup_options_modal_title": "Choose a third party paid option",
     "signup_options_blocktrades":
-        "A third-party tool that accepts Bitcoin, Ethereum, Litecoin, EZIRA and more. Blocktrades charges it's own small fee.",
+        "A third-party tool that accepts Bitcoin, Ethereum, Litecoin, ECO and more. Blocktrades charges it's own small fee.",
     "signup_options_anon":
-        "A third-party tool that accepts Bitcoin, Litecoin and EZIRA. AnonEzira also charges it's own a small fee.",
+        "A third-party tool that accepts Bitcoin, Litecoin and ECO. AnonEzira also charges it's own a small fee.",
     "signup_options_ezauth":
         "Try this option if you already have a Ezira account and want to pay to set up a new account for yourself or a friend.",
     "signup_options_disclaimer":

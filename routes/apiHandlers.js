@@ -509,7 +509,7 @@ async function handleConfirmAccount(token) {
     }
 
     if (user.status === 'created') {
-        throw new ApiError({ type: 'error_api_account_created' });
+        throw new ApiError({ type: 'error_api_accountCreated' });
     }
 
     if (user.status !== 'approved') {

@@ -12,7 +12,7 @@ const CHECKPOINTS = {
     phone_verified: 'phone_verified',
     creation_started: 'creation_started',
     password_chosen: 'password_chosen',
-    account_created: 'account_created',
+    accountCreated: 'accountCreated',
 };
 
 const checkpoints = [
@@ -78,7 +78,7 @@ const checkpoints = [
     },
     {
         human: 'Account created',
-        symbol: CHECKPOINTS.account_created,
+        symbol: CHECKPOINTS.accountCreated,
     },
 ];
 

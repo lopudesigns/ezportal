@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
-import ezira from 'ezj';
+import ezira from 'ezhelp.js';
 import { Button, Form, Icon, Popover } from 'antd';
 import { CHECKPOINTS } from '../../constants';
 import LanguageItem from './LanguageItem';
@@ -169,7 +169,7 @@ class CreateAccount extends Component {
             .then(data => {
                 if (data.success) {
                     this.setState({ step: 'created' });
-                    logCheckpoint(CHECKPOINTS.account_created);
+                    logCheckpoint(CHECKPOINTS.accountCreated);
                 } else {
                     this.setState({
                         step: 'error',
