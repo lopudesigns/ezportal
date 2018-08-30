@@ -56,8 +56,8 @@ You can build and start the Docker image like this:
 
 ```
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-docker build -t eziranetwork/ezsignup" .
-docker run -it -p 5678:5678 --env-file=.env "eziranetwork/ezsignup"
+docker build -t eziranetwork/wesignup" .
+docker run -it -p 5678:5678 --env-file=.env "eziranetwork/wesignup"
 ```
 
 ## Debugging
@@ -70,7 +70,7 @@ Add the following to `.vscode/launch.json` configurations array:
     "request": "launch",
     "name": "nodemon",
     "runtimeExecutable": "${workspaceRoot}/node_modules/nodemon/bin/nodemon.js",
-    "program": "${workspaceFolder}/bin/ezsignup",
+    "program": "${workspaceFolder}/bin/www",
     "restart": true,
     "sourceMaps": true,
     "outFiles": [],

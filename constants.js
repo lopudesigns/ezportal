@@ -3,7 +3,7 @@ const CHECKPOINTS = {
     paid_signup_options_modal_shown: 'paid_signup_options_modal_shown',
     paid_signup_clicked_blocktrades: 'paid_signup_clicked_blocktrades',
     paid_signup_clicked_anon: 'paid_signup_clicked_anon',
-    paid_signup_clicked_ezauth: 'paid_signup_clicked_ezauth',
+    paid_signup_clicked_native_auth: 'paid_signup_clicked_native_auth',
     free_signup_chosen: 'free_signup_chosen',
     username_chosen: 'username_chosen',
     email_submitted: 'email_submitted',
@@ -33,8 +33,8 @@ const checkpoints = [
         symbol: CHECKPOINTS.paid_signup_clicked_anon,
     },
     {
-        human: 'Clicked ezauth',
-        symbol: CHECKPOINTS.paid_signup_clicked_ezauth,
+        human: 'Clicked weAuth',
+        symbol: CHECKPOINTS.paid_signup_clicked_native_auth,
     },
     {
         human: 'Pressed "Sign up for free"',

@@ -119,10 +119,10 @@ const SignupOptions = ({
                 </p>
                 <a
                     className="external-link"
-                    href="https://alpha.ezira.io/news/@timcliff/new-tool-from-busy-org-create-new-ezira-blockchain-accounts-with-ezauth"
+                    href="https://alpha.ezira.io/news/@timcliff/new-tool-from-busy-org-create-new-ezira-blockchain-accounts-with-steemconnect"
                     onClick={() => {
                         logCheckpoint(
-                            CHECKPOINTS.paid_signup_clicked_ezauth
+                            CHECKPOINTS.paid_signup_clicked_native_auth
                         );
                     }}
                 >
@@ -132,7 +132,7 @@ const SignupOptions = ({
                     </Button>
                 </a>
                 <p>
-                    <FormattedMessage id="signup_options_ezauth" />
+                    <FormattedMessage id="signup_options_native_auth" />
                 </p>
                 <hr />
                 <p className="modal-disclaimer">

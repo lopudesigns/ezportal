@@ -115,7 +115,7 @@
     "sign_in": "Sign in",
     "signup_options": "Sign up options",
     "signup_options_body_1":
-        "The Ezira blockchain powers many real time content apps like Ezira, and is run by community members all around the world. To help protect them against bots and name squatters, a small fee is charged to create new accounts.",
+        "The WeYouMe blockchain powers many real time content apps like Ezira, and is run by community members all around the world. To help protect them against bots and name squatters, a small fee is charged to create new accounts.",
     "signup_options_body_2":
         "We're happy to cover this fee for you but we'll need your email and phone number to manually check that you're a real person. This process could take 1-2 weeks.",
     "signup_options_body_3":
@@ -125,13 +125,13 @@
     "signup_options_button_pay": "Pay to sign up",
     "signup_options_button_pay_caveat": "Get instant access",
     "signup_options_referrer":
-        "{referrer} is not a typical social app. It's powered by the Ezira blockchain.",
+        "{referrer} is not a typical social app. It's powered by the WeYouMe blockchain.",
     "signup_options_modal_title": "Choose a third party paid option",
     "signup_options_blocktrades":
         "A third-party tool that accepts Bitcoin, Ethereum, Litecoin, ECO and more. Blocktrades charges it's own small fee.",
     "signup_options_anon":
         "A third-party tool that accepts Bitcoin, Litecoin and ECO. AnonEzira also charges it's own a small fee.",
-    "signup_options_ezauth":
+    "signup_options_native_auth":
         "Try this option if you already have a Ezira account and want to pay to set up a new account for yourself or a friend.",
     "signup_options_disclaimer":
         "Note: Ezira, Inc does not receive any money from paid accounts.",

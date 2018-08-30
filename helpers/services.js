@@ -6,7 +6,7 @@
  */
 
 const fetch = require('isomorphic-fetch');
-const ezhelp.js = require('ezhelp.js');
+const wehelpjs = require('wehelpjs');
 const geoip = require('../helpers/maxmind');
 const jwt = require('jsonwebtoken');
 const { checkpoints } = require('../constants');
@@ -41,9 +41,9 @@ const createAccountFee = getEnv('CREATE_ACCOUNT_FEE');
 const createAccountWif = getEnv('DELEGATOR_ACTIVE_WIF');
 const recaptchaSecret = getEnv('RECAPTCHA_SECRET');
 
-const rpcNode = getEnv('EZAPI_URL');
+const rpcNode = getEnv('API_URL');
 if (rpcNode) {
-    ezhelp.js.api.setOptions({ url: rpcNode });
+    wehelpjs.api.setOptions({ url: rpcNode });
 }
 
 /**
@@ -127,7 +127,7 @@ async function conveyorCall(method, params) {
                 throw new Error(`No mock implementation for ${method}`);
         }
     } else {
-        return ezhelp.js.api.signedCallAsync(
+        return wehelpjs.api.signedCallAsync(
             `conveyor.${method}`,
             params,
             conveyorAccount,
@@ -188,7 +188,7 @@ async function checkUsername(username) {
         return username === 'taken';
     }
     // TODO: this could use lookup_accounts which is less heavy on our rpc nodes
-    const [account] = await ezhelp.js.api.getAccountsAsync([username]);
+    const [account] = await wehelpjs.api.getAccountsAsync([username]);
     return !!account;
 }
 
@@ -212,7 +212,7 @@ async function classifySignup(user) {
     if (device && device.renderer && device.vendor) {
         metadata.browser_gpu = `${device.vendor} ${device.renderer}`;
     }
-    return ezhelp.js.api.signedCallAsync(
+    return wehelpjs.api.signedCallAsync(
         'gatekeeper.check',
         { metadata },
         conveyorAccount,

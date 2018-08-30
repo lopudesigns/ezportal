@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const { api } = require('ezhelp.js');
+const { api } = require('wehelpjs');
 
 const generateTrackingId = () =>
     `x-${Math.random()

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
-import ezira from 'ezhelp.js';
+import wehelpjs from 'wehelpjs';
 import { Button, Form, Icon, Popover } from 'antd';
 import { CHECKPOINTS } from '../../constants';
 import LanguageItem from './LanguageItem';
@@ -154,7 +154,7 @@ class CreateAccount extends Component {
         } = this.props;
         const { username, password, email } = this.state;
 
-        const publicKeys = ezira.auth.generateKeys(username, password, [
+        const publicKeys = wehelpjs.auth.generateKeys(username, password, [
             'owner',
             'active',
             'posting',

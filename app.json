@@ -57,7 +57,7 @@
     "CREATE_USER_URL": {
       "required": true
     },
-    "EZAPI_URL": {
+    "API_URL": {
       "required": true
     },
     "LOG_FORMAT": "short",

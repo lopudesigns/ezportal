@@ -56,4 +56,4 @@ COPY --from=admin-stage /app/admin/build public/admin
 ENV NODE_ENV production
 ENV PORT 5678
 
-CMD [ "node", "bin/ezsignup" ]
+CMD [ "node", "bin/www" ]

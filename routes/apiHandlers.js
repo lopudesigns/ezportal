@@ -1,4 +1,4 @@
-const { hash } = require('ezj/lib/auth/ecc');
+const { hash } = require('wehelpjs/lib/auth/ecc');
 const crypto = require('crypto');
 const validator = require('validator');
 const jwt = require('jsonwebtoken');
@@ -546,7 +546,7 @@ async function handleConfirmAccount(token) {
 }
 
 /**
- * Create the account on the blockchain using ezj
+ * Create the account on the blockchain using wehelpjs
  * Send the data to the conveyor that will store the user account
  * Remove the user information from our database
  */
@@ -643,7 +643,7 @@ async function handleCreateAccount(req) {
             },
             { where: { email: decoded.email } }
         );
-        // ezj error messages are so long that the log is clipped causing
+        // wehelpjs error messages are so long that the log is clipped causing
         // errors in scalyr parsing
         cause.message = cause.message.split('\n').slice(0, 2);
         throw new ApiError({

@@ -1,14 +1,14 @@
 {
-  "name": "ezsignup",
+  "name": "wesignup",
   "version": "0.0.1",
   "engines": {
     "node": ">=8.1.4"
   },
-  "bin": "./bin/ezsignup",
-  "main": "./bin/ezsignup",
+  "bin": "./bin/www",
+  "main": "./bin/www",
   "scripts": {
-    "start": "./bin/ezsignup",
-    "start-dev": "nodemon --ignore src ./bin/ezsignup | bunyan -o short",
+    "start": "./bin/www",
+    "start-dev": "nodemon --ignore src ./bin/www | bunyan -o short",
     "jest": "env $(tr \"\\\\n\" \" \" < .env.example) jest",
     "lint": "eslint \"src/**/*.js\" \"routes/**/*.js\" \"helpers/**/*.js\"",
     "lint-fix": "eslint --fix \"src/**/*.js\" \"routes/**/*.js\" \"helpers/**/*.js\"",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "6.2.1",
-    "ezhelp.js": "0.7.1",
+    "wehelpjs": "0.7.112",
     "body-parser": "1.18.2",
     "bunyan": "1.8.12",
     "express": "4.16.2",
