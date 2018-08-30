@@ -302,7 +302,7 @@ class Signup extends Component {
                                 </h1>
                                 <p>
                                     {referrer === 'ezira' && (
-                                        <FormattedMessage id="username_know_ezira" />
+                                        <FormattedMessage id="username_know_protocol" />
                                     )}
                                     {referrer !== 'ezira' && (
                                         <FormattedMessage id="username_know" />

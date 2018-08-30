@@ -118,7 +118,7 @@ async function conveyorCall(method, params) {
         logger.warn({ callParams: params }, 'Conveyor call %s', method);
         switch (method) {
             case 'is_email_registered':
-                return (params.email || params[0]) === 'taken@ezira.io';
+                return (params.email || params[0]) === 'taken@alpha.ezira.io';
             case 'is_phone_registered':
                 return (params.phone || params[0]) === '+12345678900';
             case 'set_user_data':
@@ -155,14 +155,14 @@ async function verifyCaptcha(recaptcha, ip) {
 }
 
 /**
- * Create new ezira account.
+ * Create new account.
  * @param payload Account create with delegation operation.
  */
 async function createAccount(payload) {
     if (DEBUG_MODE) {
         logger.warn({ accountPayload: payload }, 'Creating new account');
     } else {
-        return ezira.broadcast.accountCreateWithDelegationAsync(
+        return wehelpjs.broadcast.accountCreateWithDelegationAsync(
             createAccountWif,
             createAccountFee,
             createAccountDelegation,

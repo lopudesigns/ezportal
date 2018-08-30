@@ -297,7 +297,7 @@ class SignupDetail extends React.Component<
               <small>
                 <a
                   target="_blank"
-                  href={`https://ezira.io/@${signup.username}`}
+                  href={`https://alpha.ezira.io/@${signup.username}`}
                 >
                   go to your profile
                 </a>

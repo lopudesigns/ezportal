@@ -381,7 +381,7 @@ async function handleRequestSms(req) {
     try {
         await services.sendSMS(
             phoneNumber,
-            `${phoneCode} is your Ezira confirmation code`
+            `${phoneCode} is your WeYouMe confirmation code`
         );
     } catch (cause) {
         if (cause.code === 21614 || cause.code === 21211) {

@@ -22,7 +22,7 @@ const defaultState = Map({
     countryCode: null,
     phoneNumberFormatted: '',
     prefix: '',
-    referrer: 'test.ezira.auth',
+    referrer: 'test.WeYouMe.auth',
     token: '',
     completed: false,
     step: 'signupOptions',

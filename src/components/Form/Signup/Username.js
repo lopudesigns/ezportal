@@ -130,7 +130,7 @@ class Username extends React.Component {
                         <Form.Item>
                             <div className="signin_redirect">
                                 <FormattedMessage
-                                    id="username_ezira_login"
+                                    id="username_protocol_login"
                                     values={{
                                         link: (
                                             <a href="https://alpha.ezira.io/login.html">

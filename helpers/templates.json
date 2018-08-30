@@ -1,26 +1,26 @@
 {
     "confirm_email": {
-        "from": "Ezira <noreply@ezira.io>",
+        "from": "Protocol <noreply@WeYouMe.io>",
         "subject": "Please confirm your email",
         "text":
-            "On Ezira, you get paid to post and share good content. But first, let's finish setting up your account.\n\nPlease confirm your email address by clicking on this link:\n\n{url}\n\nCheers\n\nYour friends at Ezira"
+            "On WeYouMe, you get paid to post and share good content. But first, let's finish setting up your account.\n\nPlease confirm your email address by clicking on this link:\n\n{url}\n\nCheers\n\nYour friends at WeYouMe"
     },
     "confirm_again_email": {
-        "from": "Ezira <noreply@ezira.io>",
-        "subject": "Your Ezira account is waiting...",
+        "from": "Protocol <noreply@WeYouMe.io>",
+        "subject": "Your WeYouMe account is waiting...",
         "text":
-            "You recently tried signing up for Ezira — a place to get paid for posting and sharing good content.\nWe weren't able to confirm your email address. Click this new email confirmation link to finish setting up your account:\n\n{url}\n\nCheers\n\nYour friends at Ezira."
+            "You recently tried signing up for WeYouMe — a place to get paid for posting and sharing good content.\nWe weren't able to confirm your email address. Click this new email confirmation link to finish setting up your account:\n\n{url}\n\nCheers\n\nYour friends at WeYouMe."
     },
     "create_account": {
-        "from": "Ezira <noreply@ezira.io>",
+        "from": "Protocol <noreply@WeYouMe.io>",
         "subject": "One last step to set up your account",
         "text":
-            "Hi again,\n\nGood news! Your account information has been verified.\n\nClick on this link to finish setting up your account.\n\n{url}\n\n Cheers,\nYour friends at Ezira"
+            "Hi again,\n\nGood news! Your account information has been verified.\n\nClick on this link to finish setting up your account.\n\n{url}\n\n Cheers,\nYour friends at WeYouMe"
     },
     "reject_account": {
-        "from": "Ezira <noreply@ezira.io>",
+        "from": "Protocol <noreply@WeYouMe.io>",
         "subject": "Your account is under review",
         "text":
-            "Thanks for signing up to Ezira. Your request to create an account is currently under review. We'll get back to you as soon as possible.\n\n Cheers,\nYour friends at Ezira"
+            "Thanks for signing up to WeYouMe. Your request to create an account is currently under review. We'll get back to you as soon as possible.\n\n Cheers,\nYour friends at WeYouMe"
     }
 }

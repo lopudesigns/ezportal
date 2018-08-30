@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 const Index = () => (
     <div className="Sign">
         <h1>
-            <FormattedMessage id="ezira_signup" />
+            <FormattedMessage id="protocol_signup" />
         </h1>
     </div>
 );

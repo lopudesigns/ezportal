@@ -7,7 +7,7 @@ router.get('/.well-known/healthcheck.json', (req, res) => {
 });
 
 router.get('/*', (req, res) => {
-    res.render('index', { title: 'Sign up on Ezira' });
+    res.render('index', { title: 'Sign up on WeYouMe' });
 });
 
 module.exports = router;

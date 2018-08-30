@@ -153,7 +153,7 @@ SignupOptions.propTypes = {
 };
 
 SignupOptions.defaultProps = {
-    referrer: 'test.ezira.auth',
+    referrer: 'test.WeYouMe.auth',
 };
 
 export default SignupOptions;

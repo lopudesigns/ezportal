@@ -363,7 +363,7 @@ class CreateAccount extends Component {
                                     <FormattedMessage id="welcome" /> {username}
                                 </h1>
                                 <p>
-                                    <FormattedMessage id="enjoy_ezira" />
+                                    <FormattedMessage id="enjoy_protocol" />
                                 </p>
                                 {!this.isWhistle() && (
                                     <Form.Item>

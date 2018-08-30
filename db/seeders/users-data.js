@@ -5,7 +5,7 @@ module.exports = {
   up: queryInterface => (
     queryInterface.bulkInsert('users', [
       {
-        email: 'fabien@ezira.io',
+        email: 'fabien@alpha.ezira.io',
         email_is_verified: true,
         last_attempt_verify_email: new Date(),
         phone_number: '+66102030405',
