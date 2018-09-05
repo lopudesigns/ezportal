@@ -1928,7 +1928,7 @@ re-gister.com
 reality-concept.club
 reallymymail.com
 receiveee.com
-recode.me
+RECODE.me
 reconmail.com
 recruitaware.com
 recursor.net

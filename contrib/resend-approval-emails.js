@@ -16,7 +16,7 @@ async function approveSignup(user) {
         type: 'create_account', email: user.email,
     }, process.env.JWT_SECRET)
     await mail.send(user.email, 'create_account', {
-        url: `https://signup.ezira.io/create-account?token=${token}`
+        url: `https://signup.weyoume.io/create-account?token=${token}`
     })
 }
 

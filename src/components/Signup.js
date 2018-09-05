@@ -199,12 +199,7 @@ class Signup extends Component {
                 <div className="Signup__container">
                     <div className="Signup__form">
                         <div className="Signup__header">
-                            <object
-                                data="img/logo.svg"
-                                type="image/svg+xml"
-                                id="logo"
-                                aria-label="logo"
-                            />
+													<div className="brand-name"><span>WeYouMe</span><span>Secure Login</span></div>
                             {step !== 'finish' &&
                                 step !== 'checkYourEmail' && (
                                     <div className="Signup__steps">

@@ -102,7 +102,7 @@ const SignupOptions = ({
 
                 <a
                     className="external-link"
-                    href="https://anon.ezira.io/"
+                    href="https://anon.weyoume.io/"
                     onClick={() => {
                         logCheckpoint(
                             CHECKPOINTS.paid_signup_clicked_anon
@@ -119,7 +119,7 @@ const SignupOptions = ({
                 </p>
                 <a
                     className="external-link"
-                    href="https://alpha.ezira.io/news/@timcliff/new-tool-from-busy-org-create-new-ezira-blockchain-accounts-with-steemconnect"
+                    href="https://alpha.weyoume.io/news/@timcliff/new-tool-from-busy-org-create-new-ezira-blockchain-accounts-with-steemconnect"
                     onClick={() => {
                         logCheckpoint(
                             CHECKPOINTS.paid_signup_clicked_native_auth

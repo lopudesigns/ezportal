@@ -133,7 +133,7 @@ class Username extends React.Component {
                                     id="username_protocol_login"
                                     values={{
                                         link: (
-                                            <a href="https://alpha.ezira.io/login.html">
+                                            <a href="https://alpha.weyoume.io/login.html">
                                                 <FormattedMessage id="sign_in" />
                                             </a>
                                         ),

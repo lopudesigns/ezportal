@@ -86,12 +86,7 @@ class Index extends Component {
                 <div className="Signup__container">
                     <div className="Signup__form">
                         <div className="Signup__header">
-                            <object
-                                data="img/logo.svg"
-                                type="image/svg+xml"
-                                id="logo"
-                                aria-label="logo"
-                            />
+													<div className="brand-name"><span>WeYouMe</span><span>Secure Login</span></div>
                         </div>
                         <div className="form-content">
                             {status === 'loading' && (
