@@ -3,4 +3,4 @@ const email = process.argv[2]
 const secret = process.env.JWT_SECRET
 console.log('generating token for', email)
 const token = jwt.sign({type: 'create_account', email}, secret)
-console.log(`https://signup.weyoume.io/create-account?token=${token}`)
+console.log(`https://signup.WeYouMe.io/create-account?token=${token}`)

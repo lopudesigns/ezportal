@@ -22,7 +22,7 @@ const defaultState = Map({
     countryCode: null,
     phoneNumberFormatted: '',
     prefix: '',
-    referrer: 'test.WeYouMe.auth',
+    referrer: 'webuilder1',
     token: '',
     completed: false,
     step: 'signupOptions',

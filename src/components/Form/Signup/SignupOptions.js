@@ -84,7 +84,7 @@ const SignupOptions = ({
             >
                 <a
                     className="external-link"
-                    href="https://blocktrades.us/create-ezira-account"
+                    href="https://blocktrades.us/create-WeYouMe-account"
                     onClick={() => {
                         logCheckpoint(
                             CHECKPOINTS.paid_signup_clicked_blocktrades
@@ -102,7 +102,7 @@ const SignupOptions = ({
 
                 <a
                     className="external-link"
-                    href="https://anon.weyoume.io/"
+                    href="https://anon.WeYouMe.io/"
                     onClick={() => {
                         logCheckpoint(
                             CHECKPOINTS.paid_signup_clicked_anon
@@ -119,7 +119,7 @@ const SignupOptions = ({
                 </p>
                 <a
                     className="external-link"
-                    href="https://alpha.weyoume.io/news/@timcliff/new-tool-from-busy-org-create-new-ezira-blockchain-accounts-with-steemconnect"
+                    href="https://alpha.WeYouMe.io/news/@timcliff/new-tool-from-busy-org-create-new-WeYouMe-blockchain-accounts-with-steemconnect"
                     onClick={() => {
                         logCheckpoint(
                             CHECKPOINTS.paid_signup_clicked_native_auth
@@ -127,7 +127,7 @@ const SignupOptions = ({
                     }}
                 >
                     <Button type="primary" ghost htmlType="button">
-                        Ezira
+                        WeYouMe
                         <Icon type="link" />
                     </Button>
                 </a>
@@ -153,7 +153,7 @@ SignupOptions.propTypes = {
 };
 
 SignupOptions.defaultProps = {
-    referrer: 'test.WeYouMe.auth',
+    referrer: 'webuilder1',
 };
 
 export default SignupOptions;

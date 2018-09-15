@@ -264,9 +264,9 @@ class Signup extends Component {
 
                         {step === 'signupOptions' && (
                             <div>
-                                {referrer === 'ezira' && (
+                                {referrer === 'WeYouMe' && (
                                     <object
-                                        data="img/ezira-logo.svg"
+                                        data="img/WeYouMe-logo.svg"
                                         type="image/svg+xml"
                                         id="app-logo"
                                         aria-label="logo"
@@ -284,9 +284,9 @@ class Signup extends Component {
                         )}
                         {step === 'username' && (
                             <div className="form-content">
-                                {referrer === 'ezira' && (
+                                {referrer === 'WeYouMe' && (
                                     <object
-                                        data="img/ezira-logo.svg"
+                                        data="img/WeYouMe-logo.svg"
                                         type="image/svg+xml"
                                         id="app-logo"
                                         aria-label="logo"
@@ -296,10 +296,10 @@ class Signup extends Component {
                                     <FormattedMessage id="get_started" />
                                 </h1>
                                 <p>
-                                    {referrer === 'ezira' && (
+                                    {referrer === 'WeYouMe' && (
                                         <FormattedMessage id="username_know_protocol" />
                                     )}
-                                    {referrer !== 'ezira' && (
+                                    {referrer !== 'WeYouMe' && (
                                         <FormattedMessage id="username_know" />
                                     )}
                                 </p>

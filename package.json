@@ -1,6 +1,6 @@
 {
   "name": "wesignup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">=8.1.4"
   },
@@ -15,9 +15,9 @@
     "test": "yarn run lint && yarn run jest",
     "build": "webpack -p --config webpack/webpack.prod.config.js",
     "build-dev": "webpack --progress -p --config webpack/webpack.config.js",
-		"precommit": "lint-staged",
-		"push" : "./scripts/push.sh",
-		"pull" : "./scripts/pull.sh"
+    "precommit": "lint-staged",
+    "push": "./scripts/push.sh",
+    "pull": "./scripts/pull.sh"
   },
   "dependencies": {
     "@sendgrid/mail": "6.2.1",

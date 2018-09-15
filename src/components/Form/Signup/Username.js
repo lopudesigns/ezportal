@@ -126,14 +126,14 @@ class Username extends React.Component {
                             <FormattedMessage id="continue" />
                         </Button>
                     </Form.Item>
-                    {origin === 'ezira' && (
+                    {origin === 'WeYouMe' && (
                         <Form.Item>
                             <div className="signin_redirect">
                                 <FormattedMessage
                                     id="username_protocol_login"
                                     values={{
                                         link: (
-                                            <a href="https://alpha.weyoume.io/login.html">
+                                            <a href="https://alpha.WeYouMe.io/login.html">
                                                 <FormattedMessage id="sign_in" />
                                             </a>
                                         ),

@@ -118,7 +118,7 @@ async function conveyorCall(method, params) {
         logger.warn({ callParams: params }, 'Conveyor call %s', method);
         switch (method) {
             case 'is_email_registered':
-                return (params.email || params[0]) === 'taken@alpha.weyoume.io';
+                return (params.email || params[0]) === 'taken@alpha.WeYouMe.io';
             case 'is_phone_registered':
                 return (params.phone || params[0]) === '+12345678900';
             case 'set_user_data':

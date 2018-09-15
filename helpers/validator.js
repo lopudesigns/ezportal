@@ -35,7 +35,7 @@ const INVALID_ACCOUNTNAME_REASONS = {
 /**
  * If the name is invalid, throws an error with a message set to one of INVALID_ACCOUNTNAME_REASONS.
  * See
- * https://github.com/eziranetwork/weapp/blob/eaf8a02658b8deaef376ec90b81d0866e52582cc/app/utils/ChainValidation.js#L4
+ * https://github.com/WeYouMe/weapp/blob/eaf8a02658b8deaef376ec90b81d0866e52582cc/app/utils/ChainValidation.js#L4
  *
  * @param {string} name
  * @return {boolean}

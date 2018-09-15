@@ -56,8 +56,8 @@ You can build and start the Docker image like this:
 
 ```
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-docker build -t eziranetwork/wesignup" .
-docker run -it -p 5678:5678 --env-file=.env "eziranetwork/wesignup"
+docker build -t WeYouMe/wesignup" .
+docker run -it -p 5678:5678 --env-file=.env "WeYouMe/wesignup"
 ```
 
 ## Debugging
